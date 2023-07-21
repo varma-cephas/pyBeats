@@ -1,0 +1,110 @@
+@font-face {
+    font-family: NotoSans;
+    src: url(/assets/font/NotoSans-Regular.ttf);
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: NotoSans;
+}
+
+/* styling for logo and hamburger container*/
+#logo-hamburger{
+    border: 2px solid purple;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem ;
+}
+/* styling for logo and hamburger container*/
+
+
+
+/* styling for logo */
+#logo-hamburger a{
+    text-decoration: none;
+    color: black;
+}
+/* styling for logo */
+
+
+/* removes desktop nav from mobile view */
+nav ul{
+    display: none;
+}
+/* removes desktop nav from mobile view */
+
+
+/* mobile menu styling */
+.mobile-menu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: none;
+}
+/* mobile menu styling */
+
+
+/* slants texts about ten degress */
+.slantText{
+    transform: rotate(-10deg);
+}
+/* mobile menu items constainer  */
+#whole-mobile-nav{
+    border: 2px solid yellow;
+}
+/* mobile menu items constainer  */
+
+/* menu that displays on mobile when hamburger button is hit */
+.toggle-mobile-menu{
+    display: grid;
+    gap: 2rem;
+    text-align: center;
+    border: 2px solid greenyellow;
+    padding: 1.5rem 0 1rem 0;
+/* find a way to slant text as in the way the design looks */
+}
+/* menu that displays on mobile when hamburger button is hit */
+
+
+/* removes logo when hamburger button is hit */
+.toggle-logo{
+    display: none;
+}
+/* removes logo when hamburger button is hit */
+
+
+
+/* desktop-table styling */
+
+@media (min-width: 760px){
+
+    /* removes hamburger from desktop mode */
+    #logo-hamburger img{
+        display: none;
+    }
+
+    /* using the header selector to style desktop menu */
+
+    header{
+        /* border: 2px solid purple; */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* desktop navigation styling */
+    nav ul{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        padding-right: 4rem;
+    }
+}
